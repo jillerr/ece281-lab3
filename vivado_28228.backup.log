@@ -1,0 +1,305 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 19 14:45:43 2024
+# Process ID: 28228
+# Current directory: C:/ECE281/ece281-lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20984 C:\ECE281\ece281-lab3\thunderbird.xpr
+# Log file: C:/ECE281/ece281-lab3/vivado.log
+# Journal file: C:/ECE281/ece281-lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE281/ece281-lab3/thunderbird.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 779.496 ; gain = 69.227
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'thunderbird_fsm_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj thunderbird_fsm_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity thunderbird_fsm_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4cd53e6bbb624592b3d648bdc1c3636b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot thunderbird_fsm_tb_behav xil_defaultlib.thunderbird_fsm_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture thunderbird_fsm_arch of entity xil_defaultlib.thunderbird_fsm [thunderbird_fsm_default]
+Compiling architecture test_bench of entity xil_defaultlib.thunderbird_fsm_tb
+Built simulation snapshot thunderbird_fsm_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 796.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "thunderbird_fsm_tb_behav -key {Behavioral:sim_1:Functional:thunderbird_fsm_tb} -tclbatch {thunderbird_fsm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source thunderbird_fsm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: should be La on only
+Time: 60 ns  Iteration: 0  Process: /thunderbird_fsm_tb/sim_proc  File: C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd
+$finish called at time : 60 ns : File "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" Line 128
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'thunderbird_fsm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 805.289 ; gain = 8.383
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'thunderbird_fsm_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj thunderbird_fsm_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity thunderbird_fsm_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4cd53e6bbb624592b3d648bdc1c3636b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot thunderbird_fsm_tb_behav xil_defaultlib.thunderbird_fsm_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture thunderbird_fsm_arch of entity xil_defaultlib.thunderbird_fsm [thunderbird_fsm_default]
+Compiling architecture test_bench of entity xil_defaultlib.thunderbird_fsm_tb
+Built simulation snapshot thunderbird_fsm_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "thunderbird_fsm_tb_behav -key {Behavioral:sim_1:Functional:thunderbird_fsm_tb} -tclbatch {thunderbird_fsm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source thunderbird_fsm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: should be all on
+Time: 100 ns  Iteration: 0  Process: /thunderbird_fsm_tb/sim_proc  File: C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd
+$finish called at time : 100 ns : File "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" Line 141
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'thunderbird_fsm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 823.355 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'thunderbird_fsm_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj thunderbird_fsm_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity thunderbird_fsm_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4cd53e6bbb624592b3d648bdc1c3636b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot thunderbird_fsm_tb_behav xil_defaultlib.thunderbird_fsm_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture thunderbird_fsm_arch of entity xil_defaultlib.thunderbird_fsm [thunderbird_fsm_default]
+Compiling architecture test_bench of entity xil_defaultlib.thunderbird_fsm_tb
+Built simulation snapshot thunderbird_fsm_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "thunderbird_fsm_tb_behav -key {Behavioral:sim_1:Functional:thunderbird_fsm_tb} -tclbatch {thunderbird_fsm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source thunderbird_fsm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: should be all on
+Time: 110 ns  Iteration: 0  Process: /thunderbird_fsm_tb/sim_proc  File: C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd
+$finish called at time : 110 ns : File "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" Line 141
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'thunderbird_fsm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 825.562 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'thunderbird_fsm_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj thunderbird_fsm_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity thunderbird_fsm_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4cd53e6bbb624592b3d648bdc1c3636b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot thunderbird_fsm_tb_behav xil_defaultlib.thunderbird_fsm_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture thunderbird_fsm_arch of entity xil_defaultlib.thunderbird_fsm [thunderbird_fsm_default]
+Compiling architecture test_bench of entity xil_defaultlib.thunderbird_fsm_tb
+Built simulation snapshot thunderbird_fsm_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "thunderbird_fsm_tb_behav -key {Behavioral:sim_1:Functional:thunderbird_fsm_tb} -tclbatch {thunderbird_fsm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source thunderbird_fsm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: should be all on
+Time: 110 ns  Iteration: 0  Process: /thunderbird_fsm_tb/sim_proc  File: C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd
+$finish called at time : 110 ns : File "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" Line 142
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'thunderbird_fsm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 826.270 ; gain = 0.168
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'thunderbird_fsm_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj thunderbird_fsm_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ECE281/ece281-lab3/src/hdl/thunderbird_fsm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity thunderbird_fsm_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4cd53e6bbb624592b3d648bdc1c3636b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot thunderbird_fsm_tb_behav xil_defaultlib.thunderbird_fsm_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture thunderbird_fsm_arch of entity xil_defaultlib.thunderbird_fsm [thunderbird_fsm_default]
+Compiling architecture test_bench of entity xil_defaultlib.thunderbird_fsm_tb
+Built simulation snapshot thunderbird_fsm_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/ECE281/ece281-lab3/thunderbird.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "thunderbird_fsm_tb_behav -key {Behavioral:sim_1:Functional:thunderbird_fsm_tb} -tclbatch {thunderbird_fsm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source thunderbird_fsm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'thunderbird_fsm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 828.359 ; gain = 0.945
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 19 14:55:03 2024...

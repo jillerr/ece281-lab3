@@ -58,27 +58,91 @@ architecture test_bench of thunderbird_fsm_tb is
 	
 	component thunderbird_fsm is 
 	  port(
-		
+		i_clk, i_reset  :  in std_logic;
+        i_left, i_right :  in std_logic;
+        o_lights_L      :  out std_logic_vector(2 downto 0);
+        o_lights_R      :  out std_logic_vector(2 downto 0)
 	  );
 	end component thunderbird_fsm;
 
 	-- test I/O signals
+	signal w_left : std_logic := '0';
+	signal w_right : std_logic := '0';
+    signal w_reset : std_logic := '0';
+    signal w_clk : std_logic := '0';
+	signal w_righttail : std_logic_vector(2 downto 0) := "000";
+	signal w_lefttail : std_logic_vector(2 downto 0) := "000";
 	
 	-- constants
-	
+    constant k_clk_period : time := 10 ns;
 	
 begin
 	-- PORT MAPS ----------------------------------------
-	
-	-----------------------------------------------------
-	
-	-- PROCESSES ----------------------------------------	
-    -- Clock process ------------------------------------
-    
+	uut: thunderbird_fsm port map (
+              i_left => w_left,
+              i_right => w_right,
+              i_reset => w_reset,
+              i_clk => w_clk,
+              o_lights_L => w_lefttail,
+              o_lights_R => w_righttail
+            );
+        ----------------------------------------------------------------
+      
+        -- PROCESSES --------------------------------------------------- 
+        -- Clock process
+     clk_proc : process
+     begin
+         w_clk <= '0';
+         wait for k_clk_period/2;
+         w_clk <= '1';
+         wait for k_clk_period/2;
+     end process;
 	-----------------------------------------------------
 	
 	-- Test Plan Process --------------------------------
-	
+	sim_proc: process
+        begin
+            -- sequential timing
+            w_reset <= '1';
+            wait for k_clk_period*1;
+              assert w_righttail = "000" report "bad reset" severity failure;
+              assert w_lefttail = "000" report "bad reset" severity failure;
+            
+            w_reset <= '0';
+            wait for k_clk_period*1;
+            
+            -- red light
+            w_right <= '1';
+            w_left <= '0'; wait for k_clk_period;
+              assert w_righttail = "001" report "should be Ra on only" severity failure;
+              assert w_lefttail = "000" report "should be Ra on only" severity failure;
+            wait for k_clk_period;
+              assert w_righttail = "011" report "should be Ra Rb on only" severity failure;
+              assert w_lefttail = "000" report "should be Ra Rb on only" severity failure;
+            wait for k_clk_period;
+              assert w_righttail = "111" report "should be Ra Rb Rc on only" severity failure;
+              assert w_lefttail = "000" report "should be Ra Rb Rc on only" severity failure;
+           
+            wait for k_clk_period;
+           w_left <= '1';
+           w_right <= '0'; wait for k_clk_period;
+              assert w_lefttail = "001" report "should be La on only" severity failure;
+              assert w_righttail = "000" report "should be La on only" severity failure;
+           wait for k_clk_period;
+              assert w_lefttail = "011" report "should be La Lb on only" severity failure;
+              assert w_righttail = "000" report "should be La Lb on only" severity failure;
+           wait for k_clk_period;
+              assert w_lefttail = "111" report "should be La Lb Lc on only" severity failure;
+              assert w_righttail = "000" report "should be La Lb Lc on only" severity failure;
+            -- car shows up at red light
+           wait for k_clk_period;
+           w_left <= '1';
+           w_right <= '1' ; wait for k_clk_period;
+           assert w_lefttail = "111" report "should be all on" severity failure;
+           assert w_righttail = "111" report "should be all on" severity failure;
+            -- reset and test yellow to red even if car
+            wait;
+        end process;
 	-----------------------------------------------------	
 	
 end test_bench;
