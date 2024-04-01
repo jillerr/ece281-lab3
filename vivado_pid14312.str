@@ -1,0 +1,339 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 14312
+License: Customer
+
+Current time: 	Sun Mar 31 15:45:51 MDT 2024
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 685 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	C26Robert.Miller
+User home directory: C:/Users/Robert.Miller
+User working directory: C:/ECE281/ece281-lab3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Robert.Miller/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Robert.Miller/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Robert.Miller/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/ECE281/ece281-lab3/vivado.log
+Vivado journal file location: 	C:/ECE281/ece281-lab3/vivado.jou
+Engine tmp dir: 	C:/ECE281/ece281-lab3/.Xil/Vivado-14312-C26-5CG2151M88
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	189 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 508 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 35 MB (+34285kb) [00:00:18]
+// [Engine Memory]: 395 MB (+262449kb) [00:00:18]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\ECE281\ece281-lab3\thunderbird.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/ECE281/ece281-lab3/thunderbird.xpr 
+// [GUI Memory]: 53 MB (+17388kb) [00:00:35]
+// [Engine Memory]: 508 MB (+98237kb) [00:00:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 32 MB. Current time: 3/31/24 3:45:54 PM MDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/ECE281/ece281-lab3/thunderbird.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 554 MB (+21228kb) [00:00:58]
+// [GUI Memory]: 58 MB (+1569kb) [00:00:59]
+// HMemoryUtils.trashcanNow. Engine heap size: 570 MB. GUI used memory: 38 MB. Current time: 3/31/24 3:46:18 PM MDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.770 ; gain = 26.906 
+// Project name: thunderbird; location: C:/ECE281/ece281-lab3; part: xc7a35tcpg236-1
+// [Engine Memory]: 583 MB (+1961kb) [00:01:02]
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 61 MB (+328kb) [00:03:36]
+// PAPropertyPanels.initPanels (top_basys3.vhd) elapsed time: 0.3s
+// Elapsed time: 154 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 65 MB (+1413kb) [00:03:39]
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3.vhd", 211, 89); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 374, 176); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 255, 273); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 235, 279); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 232, 293); // ce (w, ck)
+// [GUI Memory]: 69 MB (+18kb) [00:06:07]
+// Elapsed time: 214 seconds
+selectCodeEditor("top_basys3.vhd", 294, 312); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("top_basys3.vhd", 297, 114); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 361, 117); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 371, 112); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 390, 110); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 437, 113); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("top_basys3.vhd", 353, 214); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 330, 228); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 281, 230); // ce (w, ck)
+// [GUI Memory]: 73 MB (+920kb) [00:08:41]
+// Elapsed time: 72 seconds
+selectCodeEditor("top_basys3.vhd", 421, 127); // ce (w, ck)
+// [GUI Memory]: 77 MB (+44kb) [00:11:12]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2352 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4873886 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 592 MB. GUI used memory: 33 MB. Current time: 3/31/24 5:21:07 PM MDT
+// Elapsed time: 5250 seconds
+selectCodeEditor("top_basys3.vhd", 481, 97); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 538, 112); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 507, 86); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 491, 71); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 574, 100); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 575, 116); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 520, 91); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 507, 71); // ce (w, ck)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2231 ms. Increasing delay to 4000 ms.
+// [GUI Memory]: 80 MB (+48kb) [01:37:30]
+// [GUI Memory]: 85 MB (+876kb) [01:40:45]
+// [GUI Memory]: 90 MB (+394kb) [01:41:15]
+// [GUI Memory]: 95 MB (+134kb) [01:41:45]
+// [GUI Memory]: 100 MB (+110kb) [01:47:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 597 MB. GUI used memory: 42 MB. Current time: 3/31/24 5:51:03 PM MDT
+// Elapsed time: 1868 seconds
+selectCodeEditor("top_basys3.vhd", 149, 215); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 266, 331); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 251, 310); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 229, 518); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 109, 486); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 117, 393); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 115, 378); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 117, 365); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 117, 349); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 113, 330); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 114, 318); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 113, 298); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 107, 279); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 107, 258); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 108, 241); // ce (w, ck)
+// Elapsed time: 1463 seconds
+selectCodeEditor("top_basys3.vhd", 139, 307); // ce (w, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 28, false); // u (O, ck)
+// bi (ck): Implementation is Out-of-date: addNotify
+dismissDialog("Implementation is Out-of-date"); // bi (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Mar 31 18:18:30 2024] Launched synth_1... Run output will be captured here: C:/ECE281/ece281-lab3/thunderbird.runs/synth_1/runme.log [Sun Mar 31 18:18:30 2024] Launched impl_1... Run output will be captured here: C:/ECE281/ece281-lab3/thunderbird.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 83 seconds
+selectCodeEditor("top_basys3.vhd", 334, 235); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 327, 220); // ce (w, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 597 MB. GUI used memory: 41 MB. Current time: 3/31/24 6:21:04 PM MDT
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 84 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (ck):  Open Implemented Design : addNotify
+// [Engine Memory]: 618 MB (+6021kb) [02:36:03]
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 706 MB. GUI used memory: 41 MB. Current time: 3/31/24 6:21:24 PM MDT
+// [Engine Memory]: 718 MB (+72228kb) [02:36:08]
+// [Engine Memory]: 885 MB (+137359kb) [02:36:13]
+// [Engine Memory]: 930 MB (+890kb) [02:36:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 951 MB. GUI used memory: 41 MB. Current time: 3/31/24 6:21:38 PM MDT
+// [Engine Memory]: 991 MB (+15158kb) [02:36:28]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,344 MB. GUI used memory: 41 MB. Current time: 3/31/24 6:21:49 PM MDT
+// [Engine Memory]: 1,344 MB (+317820kb) [02:36:32]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2018.2/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.4s
+// [Engine Memory]: 1,415 MB (+4081kb) [02:36:34]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1648.402 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1648.402 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// ExpRunCommands.openImplResults elapsed time: 33.4s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1713.129 ; gain = 869.164 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dP' command handler elapsed time: 37 seconds
+// Elapsed time: 37 seconds
+dismissDialog("Open Implemented Design"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (Q, ck)
+// [GUI Memory]: 106 MB (+1626kb) [02:36:57]
+// [GUI Memory]: 113 MB (+1161kb) [02:39:41]
+// [GUI Memory]: 118 MB (+100kb) [02:42:46]
+// Elapsed time: 497 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 2); // k (j, ck)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (Q, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd), thunderbird_inst : thunderbird_fsm(thunderbird_fsm_arch) (thunderbird_fsm.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd), thunderbird_inst : thunderbird_fsm(thunderbird_fsm_arch) (thunderbird_fsm.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd), clkdiv_inst : clock_divider(countCompare) (clock_divider.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd), clkdiv_inst : clock_divider(countCompare) (clock_divider.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "thunderbird_fsm.vhd", 4); // k (j, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (Q, ck)
+// [GUI Memory]: 124 MB (+92kb) [02:47:14]
+// [GUI Memory]: 132 MB (+1702kb) [02:52:39]
+// [GUI Memory]: 140 MB (+1084kb) [02:58:28]
+// [GUI Memory]: 148 MB (+1622kb) [03:04:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,475 MB. GUI used memory: 78 MB. Current time: 3/31/24 6:51:49 PM MDT
+// Elapsed time: 1492 seconds
+selectCodeEditor("thunderbird_fsm.vhd", 124, 284); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 153, 294); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 152, 300); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 144, 297); // ce (w, ck)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1240 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 571 seconds
+selectCodeEditor("thunderbird_fsm.vhd", 243, 31); // ce (w, ck)
+// Elapsed time: 188 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 243, 252); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,475 MB. GUI used memory: 76 MB. Current time: 3/31/24 7:21:50 PM MDT
+// Elapsed time: 1863 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "thunderbird_fsm.vhd", 4); // k (j, ck)
+// Elapsed time: 177 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 2); // k (j, ck)
+// Elapsed time: 456 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "thunderbird_fsm.vhd", 4); // k (j, ck)
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 2); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,475 MB. GUI used memory: 77 MB. Current time: 3/31/24 7:51:50 PM MDT
+// Elapsed time: 99 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "thunderbird_fsm.vhd", 4); // k (j, ck)
+// Elapsed time: 206 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, thunderbird_fsm_tb(test_bench) (thunderbird_fsm_tb.vhd)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, thunderbird_fsm_tb(test_bench) (thunderbird_fsm_tb.vhd)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 822 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "thunderbird_fsm.vhd", 4); // k (j, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("thunderbird_fsm.vhd", 119, 521); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 1477, 361); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 1467, 359); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 1463, 339); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 1476, 362); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 27, 331); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 1285, 371); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 29, 334); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("thunderbird_fsm.vhd", 757, 520); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 186, 490); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 25, 328); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 102, 361); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 102, 362); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 31, 333); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 162, 415); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 167, 437); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 443, 428); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 605, 439); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 618, 431); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 427, 436); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 151, 419); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 468, 441); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 425, 434); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 621, 448); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 713, 449); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 904, 445); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 896, 446); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 806, 371); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 792, 339); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("thunderbird_fsm.vhd", 765, 498); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 763, 501); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 763, 501, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("thunderbird_fsm.vhd", 763, 501); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 759, 501); // ce (w, ck)
+selectCodeEditor("thunderbird_fsm.vhd", 758, 501); // ce (w, ck)

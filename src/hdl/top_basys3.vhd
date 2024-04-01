@@ -79,7 +79,7 @@ entity top_basys3 is
 		--btnU	:	in	std_logic;
 		btnL	:	in	std_logic;                    -- clk_reset
 		btnR	:	in	std_logic	                  -- fsm_reset
-		--btnD	:	in	std_logic;	
+		--btnD	:	in	std_logic;
 	);
 end top_basys3;
 
